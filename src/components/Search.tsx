@@ -16,6 +16,7 @@ const Search = ({
   onOptionSelect,
   onSubmit,
 }: Props): JSX.Element => {
+  const filteredOptions = term !== "" ? options : [];
   return (
     <main className="flex h-[100vh] w-full items-center justify-center bg-gradient-to-br from-sky-400 via-rose-400 to-lime-400">
       <section className="flex h-full w-full flex-col items-center justify-center rounded bg-white bg-opacity-20 p-4 text-center text-zinc-700 drop-shadow-lg backdrop-blur-lg md:max-w-[500px] md:px-10 lg:h-[500px] lg:p-24">
@@ -34,13 +35,13 @@ const Search = ({
             onChange={onInputChange}
           />
           <ul className="absolute top-9 ml-1 rounded-b-md bg-white">
-            {options.map((option: OptionType, index: number) => (
+            {filteredOptions.map((option: OptionType, index: number) => (
               <li key={option.name + "-" + index}>
                 <button
                   className="w-full cursor-pointer px-2 py-1 text-left text-sm hover:bg-zinc-700 hover:text-white"
                   onClick={() => onOptionSelect(option)}
                 >
-                  {option.name}
+                  {option.name}, {option.country}
                 </button>
               </li>
             ))}
