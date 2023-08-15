@@ -1,13 +1,29 @@
-This project is using ReactJS, TypeScript and TailwindCSS. It also runs on node 18 (see .nvmrc) and has a formatter - prettier. If you're running this for the first time - please ensure you have nvm (node version manager).
 
-## How To Run
+# How To Run?
 
-If you don't have nvm installed, run the following command:
-`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
-After you got nvm installed on your machine, run `nvm i` and then `nvm use` (to have the correct nodeJs version)
+1. Clone the Repository in your Terminal:
 
-Once you have the correct node version, run `npm i` to get all the required dependencies installed
+  `git clone https://github.com/jayden-n/another-day-another-drizzle.git`
 
-After everything is installed, run `npm run start` and navigate to http://localhost:3000
+2. Navigate to the Project Directory:
 
-## API Calls
+  `cd another-day-another-drizzle`
+
+3. Install Dependencies:
+   
+  Run `npm i` to get all the required dependencies installed
+
+4. Run & enjoy the App :)
+
+  After everything is installed, run `npm run start` and navigate to http://localhost:3000
+
+## Contributing
+
+Pull requests are welcomed and highly appreciated. Before making any major changes, please feel free to open an issue and initiate a discussion about your ideas. Your valuable input and collaboration are greatly valued!
+
+## License
+
+This web app is available under [MIT](https://choosealicense.com/licenses/mit/).
+
+
+
