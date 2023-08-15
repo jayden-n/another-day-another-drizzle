@@ -14,7 +14,8 @@ export const useForecast = () => {
       }`,
     )
       .then((res) => res.json())
-      .then((data) => setOptions(data));
+      .then((data) => setOptions(data))
+      .catch((err) => alert(err));
   };
 
   // the expected event type is a change event on an HTML input element.
@@ -38,7 +39,8 @@ export const useForecast = () => {
         };
 
         setForecast(forecastData);
-      });
+      })
+      .catch((err) => alert(err));
   };
 
   const onSubmit = () => {
